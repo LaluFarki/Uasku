@@ -1,0 +1,98 @@
+:root {
+    --primary: #347928;
+    --bg: #C8DCCB;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    color : white;
+    background-color: var(--bg);
+  }
+
+  /* navbar navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--bg);
+    height: 100px;
+    opacity: 0.9;
+    /* agar position sticky */
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .navbar-logo span {
+    color: white;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+
+/* hero section */
+/* hero section */
+.hero {
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../img/kebun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+}
+
+.hero .conten {
+    margin-left: 30px;
+    /* background-color: #347928; */
+}
+.hero .conten h1{
+    font-size: 4em;
+}
+
+.hero .conten h1 span {
+    color: var(--primary);
+    text-shadow: 0 0 2px white;
+}
+.hero .conten p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+line-height: 1.7rem;
+font-weight: bold;
+}
+
+.hero img {
+    /* background-color: white; */
+    width: 800px;
+    height: 800px;
+    margin-right: -70px;
+}
