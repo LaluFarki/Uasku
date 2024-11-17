@@ -20,7 +20,7 @@
     font-family: "Roboto", sans-serif;
     color : white;
     background-color: var(--bg);
-    height: 4000px;
+    /* height: 4000px; */
   }
 
   /* navbar navbar */
@@ -144,17 +144,20 @@ font-weight: bold;
 }
 
 .promo .container {
-    background-color: var(--bg);
+    background-color: white;
     width: 400px;
-    height: 500px;
+    height: 600px;
     box-shadow: 0 0 1px  rgb(125, 123, 123);
     display: flex;
     margin-left: 50px;
+    border-radius: 10px;
 }
 
 .promo .container img {
-    width: 300px;
-    height: 300px;
-    
-    
+    width: 370px;
+    height: 400px;
+    padding-top: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
 }
