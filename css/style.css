@@ -57,7 +57,7 @@
     display: inline-block;
     font-size: 1.1rem;
     margin: 0 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .navbar .navbar-nav a::after {
@@ -181,13 +181,20 @@ font-weight: bold;
 /* menu section */
 
 .menu {
-    background-color: #00712D;
+    background-image: url(../img/menubg.jpg);
+    /* background:linear-gradient(180deg,var(--primary),rgb(180, 253, 70)) ; */
+    /* background-image: radial-gradient(ellipse farthest-corner at bottom left , #FC7300 , rgb(107, 127, 15) , green); */
     border-radius: 300px 300px 0 0;
+    /* background-repeat: no-repeat; */
     margin-top: 100px;
+    background-size: cover;
+    /* background-position: top top; */
+
 }
 
 .menu h2{
     color: white;
+    text-shadow: 2px 2px black ;
 }
 .menu .wrap{
     display: flex;
@@ -210,10 +217,20 @@ font-weight: bold;
     height: 300px;
     margin-top: 30px;
     border-radius: 10px;
+    transition: transform 1s ease;
+}
+
+.menu .wrap .card:hover{
+    background-color: #00712D;
+    
+    transform: scale(1.1);
+    
 }
 
 .menu .wrap .card h3 {
     margin-top: 10px;
     color: black;
 }
+
+
 
