@@ -1,5 +1,5 @@
 :root {
-    --primary: #00712D;
+    --primary: #008240;
     --bg: #C8DCCB;
   }
 
@@ -17,7 +17,7 @@
   }
 
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     color : white;
     background-color: var(--bg);
     /* height: 4000px; */
@@ -110,6 +110,10 @@
 .hero .conten h1 span {
     color: var(--primary);
     text-shadow: 0 0 2px white;
+    /* background-color: linear-gradient(bottom right,  var(--primary), rgb(177, 230, 42)
+    , #1a1a1a);
+     background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 .hero .conten p {
     font-size: 1.6rem;
@@ -232,5 +236,63 @@ font-weight: bold;
     color: black;
 }
 
+.menu .btn {
+    width: fit-content ;
+    background-color: var(--primary);
+   margin: 50px auto;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 1.2rem;
+}
+
+.menu .btn:hover {
+    transform: scale(1.1);
+}
+
+/* morre info section */
+.more {
+    height: 1400px;
+    background-color: var(--primary);
+}
+
+.more .info1 {
+    border-top: 2px dashed white;
+}
+.more .info1,.more .info2 {
+    display: flex;
+    align-items: center;
+}
+
+.more .info2  {
+    border-bottom: 2px dashed white;
+}
+.more .info1 img , .more .info2 img {
+    width: 50%;
+    height: 50%;
+}
 
 
+.more .info2 .farm , .more .info1 .Mystore {
+    margin: 0 auto;
+   width: 40%;
+   border-bottom: 2px dashed white;
+   font-family: "Sour Gummy", sans-serif;
+   background-color:   rgb(0 130 64);
+}
+
+.more .info1 h1, .more .info2 h1{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.more .info1 p, .more .info2 p{
+    line-height: 25px;
+}
+
+.more .map img{
+   position: relative;
+   left: 25%;
+  margin-top: -40px;
+    width: 50%;
+
+}
