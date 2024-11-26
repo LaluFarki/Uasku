@@ -53,10 +53,15 @@
     color: white;
 }
 
+.navbar .navbar-nav {
+    display: inline-block;
+    margin-left: -400px;
+    margin-top: .8rem;
+}
 .navbar .navbar-nav a {
     color: white;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0 1.5rem;
     font-weight: 500;
 }
@@ -71,6 +76,16 @@
   }
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
+  }
+
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+
+  
+#hamburger-menu {
+    display: none;
   }
 
 /* hero section */
@@ -430,6 +445,7 @@ footer .konten {
 
 footer p {
     margin-bottom: 10px; /* Atur jarak antar paragraf */
+    margin-bottom: 10px;
 }
 
 footer h1, footer h3 {
