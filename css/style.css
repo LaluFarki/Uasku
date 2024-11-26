@@ -10,6 +10,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    color: white;
   }
 
   html {
@@ -20,7 +21,7 @@
     font-family: "Inter", sans-serif;
     color : white;
     background-color: var(--bg);
-    /* height: 4000px; */
+    height: fit-content;
   }
 
   /* navbar navbar */
@@ -289,10 +290,165 @@ font-weight: bold;
     line-height: 25px;
 }
 
+.more .map h1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
+   text-align: center;
+}
+
 .more .map img{
    position: relative;
    left: 25%;
   margin-top: -40px;
     width: 50%;
 
+}
+
+/* contact section */
+/* contact section */
+
+.contact {
+    font-family: "Sour Gummy", sans-serif;
+    position: relative;
+    display: flex;
+    background-image: url(../img/bg-contact-transformed.jpeg);
+    background-size: cover;
+    border-top: 10px dashed rgb(255, 255, 255);
+    height: 1000px;
+}
+
+.contact .container {
+    width: 30%;
+
+}
+
+.contact h1{
+    padding: 5px;
+    font-size: 2.5rem;
+}
+ .contact h2 {
+    margin-bottom: 50px;
+}
+
+.contact .mail ,.contact .call ,.contact .address {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contact .mail p,.contact .call p,.contact .address p{
+    margin-left: 10px;
+    
+    font-weight: bolder;
+} 
+
+.contact .row {
+    display: flex;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.contact .row .map {
+   
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .contact .row form {
+    width: 50%;
+   height: 55.6%;
+   border-radius: 5px;
+    padding: 0 2rem;
+    text-align: center;
+    
+    background: linear-gradient(to top left , yellow,var(--primary));
+  }
+
+  .contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 3px solid #eee;
+    padding-left: 2rem;
+    border-radius: 10px;
+  }
+
+  .contact .row form .input-group input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    background:none;
+    color: #fff;
+  }
+
+  .contact .row form button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  /* footeer */
+
+  footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 15% 50% 0 0;
+    margin-top: -250px;
+    height: 400px;
+    padding-top: 100px;
+  }
+
+footer .konten {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.konten .st-row img {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.konten .st-row .social {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.st-row, .nd-row, .rd-row, .th-row {
+    margin-top: 20px; /* Atur sesuai kebutuhan */
+}
+
+footer p {
+    margin-bottom: 10px; /* Atur jarak antar paragraf */
+}
+
+footer h1, footer h3 {
+    margin-bottom: 15px; /* Atur jarak antar heading dan teks berikutnya */
+}
+
+.konten .th-row span {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    background-color: rgb(197, 242, 34);
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+
+}
+
+.konten .th-row span:hover {
+    transform: scale(1.1);
 }
