@@ -176,7 +176,12 @@ font-weight: bold;
     box-shadow: 0 0 1px  rgb(125, 123, 123);
     border-radius: 10px;
     color: black;
+    transition: 0.5s ease;
     
+}
+
+.promo  .container-card:nth-child(1):hover,.promo  .container-card:nth-child(2):hover,.promo  .container-card:nth-child(3):hover{
+    transform: scale(1.060);
 }
 
 .promo .container-card img {
@@ -196,6 +201,10 @@ font-weight: bold;
 .promo .container-card p {
    margin-top: -50px;
    margin-left: 20px;
+   color: rgb(106, 106, 106);
+   text-align: justify;
+   padding: 0px 20px 50px 0px;
+   font-family: "Sour Gummy", sans-serif;
 } 
 
 /* menu section */
@@ -272,8 +281,9 @@ font-weight: bold;
 
 /* morre info section */
 .more {
-    height: 1400px;
+
     background-color: var(--primary);
+
 }
 
 .more .info1 {
@@ -653,7 +663,19 @@ footer h1, footer h3 {
        
     }
     
+    /* .contact {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .contact .container {
+        width: 100%;
+    }
+
+    .contact .row {
+        display: flex;
+        flex-direction: column;
+    } */
   
 }
 
