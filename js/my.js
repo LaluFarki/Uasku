@@ -1,3 +1,5 @@
+alert('selamat datang Di Mafia Esteh')
+
 const navbarNav = document.querySelector('.navbar-nav');
 
 document.querySelector('#hamburger-menu').onclick = () => {
@@ -15,3 +17,13 @@ document.addEventListener('click', function(e){
     navbarNav.classList.remove('active');
   }
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Periksa jika ini adalah halaman 3
+  if (window.location.href.includes("promo")) {
+    const popup = document.getElementById("popup");
+    // Aktifkan animasi
+    popup.style.opacity = "1";
+    popup.style.transform = "scale(1)";
+  }
+});

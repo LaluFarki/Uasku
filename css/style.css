@@ -121,6 +121,7 @@
 .hero .conten h1{
     font-size: 4em;
     padding-top: 50px;
+    animation: animasiku 2s ease-in-out;
 }
 
 .hero .conten h1 span {
@@ -136,6 +137,7 @@
     margin-top: 1rem;
 line-height: 1.7rem;
 font-weight: bold;
+animation: animasiku 2s ease-in-out;
 }
 
 .hero aside img {
@@ -144,6 +146,7 @@ font-weight: bold;
     height: 800px;
     margin-right: -70px;
    padding-top: 100px;
+   animation: animasiku 2s ease-in;
 }
 
 
@@ -177,7 +180,25 @@ font-weight: bold;
     border-radius: 10px;
     color: black;
     transition: 0.5s ease;
+    animation: animasiku 2s ease;
     
+}
+
+@keyframes animasiku {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .promo  .container-card:nth-child(1):hover,.promo  .container-card:nth-child(2):hover,.promo  .container-card:nth-child(3):hover{
